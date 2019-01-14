@@ -18,18 +18,10 @@ def get_data(path):
     file = file.read()
     return file
 
-def nb_sentences(doc):
-    i = 0
-    for sent in doc.sents:
-        i += 1
-    print (i)
-    return i
-
 def get_sentences(doc):
-    nb = nb_sentences(doc)
-    list = [nb]
+    list = []
     for sent in doc.sents:
-        i += 1
+        list.append(sent)
 
 def sentiment_analyse(doc, list, sentence):
     keke = 0
