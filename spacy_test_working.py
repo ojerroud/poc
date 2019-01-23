@@ -1,12 +1,13 @@
 import spacy, functions
 
-sentence = functions.get_data('text.txt')
-# list = functions.get_data('data.csv')
+list = []
 
-
+bloc = functions.get_data('text.txt')
 nlp = spacy.load('fr')
-doc = nlp(sentence)
-functions.get_sentences(doc)
-
-# keke = functions.sentiment_analyse(doc, list, sentence)
-# print("tn ga lo c 1 vré! il é a", keke) 
+doc = nlp(bloc)
+list, nb_sents = functions.get_sentences(doc)
+# print ('[',nb_sents,']')
+# for i in range(0, nb_sents):
+#     print (i, list[i])
+for token in list[0]:
+    print("{0}\t{1}".format(token.text,token.tag_))

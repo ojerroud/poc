@@ -20,9 +20,11 @@ def get_data(path):
 
 def get_sentences(doc):
     list = []
+    i = 0
     for sent in doc.sents:
+        i += 1
         list.append(sent)
-    return (list)
+    return (list, i)
 
 def sentiment_analyse(doc, list, sentence):
     keke = 0
