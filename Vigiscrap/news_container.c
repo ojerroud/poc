@@ -58,7 +58,7 @@ char	*clean_str(char	*str)
 	return (temp);
 }
 
-int proprio(char *start_bis, char *end, char cont[500001])
+int		proprio(char *start_bis, char *end, char cont[500001])
 {
 	char res[500001];
 	if ((start_bis = strstr(start_bis+1, "tn__=CH-R\">")))
@@ -74,7 +74,7 @@ int proprio(char *start_bis, char *end, char cont[500001])
 		printf("|||proprio_no ");
 	return (0);
 }
-void date(char *start_bis, char *end, char cont[500001])
+void	date(char *start_bis, char *end, char cont[500001])
 {
 	char res[500001];
 	if ((start_bis = strstr(start_bis+1, "<abbr>")))
@@ -86,10 +86,7 @@ void date(char *start_bis, char *end, char cont[500001])
 		printf("|||date: %s ", res);
 	}
 	else
-	{
 		printf("|||date_no ");
-	}
-
 }
 //
 // void text_lien(char *start_bis, char *end, char cont[500001])
@@ -99,7 +96,7 @@ void date(char *start_bis, char *end, char cont[500001])
 //
 // }
 
-int text(char *start_bis, char *end, char cont[500001])
+int		text(char *start_bis, char *end, char cont[500001])
 {
 	char res[500001];
 	char *test;
@@ -124,14 +121,14 @@ int text(char *start_bis, char *end, char cont[500001])
 		return (1);
 	}
 	else
-	{
 		printf("|||text_no ");
-	}
 	return (0);
 }
-int titre(char *start_bis, char *end, char cont[500001])
+
+int		titre(char *start_bis, char *end, char cont[500001])
 {
-	char res[500001];
+	char	res[500001];
+
 	if ((start_bis = strstr(start_bis+1, "<td class=\"t\"><")))
 		{
 			// printf("\n-Titre_video-|");
@@ -142,14 +139,14 @@ int titre(char *start_bis, char *end, char cont[500001])
 			return (1);
 		}
 	else
-	{
 		printf("|||title_no ");
-	}
 	return (0);
 }
-int auteur(char *start_bis, char *end, char cont[500001])
+
+int		auteur(char *start_bis, char *end, char cont[500001])
 {
-	char res[500001];
+	char	res[500001];
+
 	if ((start_bis = strstr(start_bis+1, "</h3><div")))
 	{
 		// printf("\n-Auteur_video-|");
@@ -160,14 +157,14 @@ int auteur(char *start_bis, char *end, char cont[500001])
 		return (1);
 	}
 	else
-	{
 		printf("|||auteur_no ");
-	}
 	return (0);
 }
-int nb_comm(char *start_bis, char *end, char cont[500001])
+
+int		nb_comm(char *start_bis, char *end, char cont[500001])
 {
-	char res[500001];
+	char	res[500001];
+
 	if ((start_bis = strstr(start_bis+1, "__tn__=%2AW-R\" class=\"")))
 	{
 		// printf("\n-NB Commentaires-|");
@@ -179,19 +176,15 @@ int nb_comm(char *start_bis, char *end, char cont[500001])
 			return (1);
 		}
 		else
-		{
 			printf("|||nb_comm_no ");
-		}
 	}
 	else
-	{
 		printf("|||nb_comm_else ");
-	}
 	return (0);
 }
 
 
-int main(int argc, char **argv)
+int		main(int argc, char **argv)
 {
 	char buff[500001];
 	char res[500001];
@@ -201,9 +194,10 @@ int main(int argc, char **argv)
 	char *start_bis;
 	char *end;
 	int i;
-	i = 0;
 	int image;
+
 	image = 0;
+	i = 0;
 	fd = open(argv[1], O_RDONLY);
 	read(fd, buff, 500001);
 	start = buff;
