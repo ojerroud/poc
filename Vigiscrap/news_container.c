@@ -17,6 +17,10 @@
 #include <string.h>
 #include <ctype.h>
 
+int is_clone()
+{
+	return (1);
+}
 
 char	*clean_str(char	*str)
 {
@@ -153,11 +157,11 @@ int		auteur(char *start_bis, char *end, char cont[500001])
 		end = strstr(start_bis + 7, "<div class");
 		bzero(res, 5000);
 		memcpy(res, start_bis + 24, end - start_bis - 24);
-		printf("|||auteur: %s ", res);
+		printf("|||%s ", res);
 		return (1);
 	}
 	else
-		printf("|||auteur_no ");
+		printf("||| ");
 	return (0);
 }
 
@@ -204,6 +208,8 @@ int		main(int argc, char **argv)
 	printf("Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil\n");
  	while ((start = strstr(start+1, "role=\"presentation\"><tbody><tr><td class=\"m\"><div ")))
 	{
+		if (is_clone())
+			continue;
 		printf("\ncontainer %d:", ++i);
 		end = strstr(start, "avis sur cette publication</a>");
 
