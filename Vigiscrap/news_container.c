@@ -15,6 +15,48 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <string.h>
+#include <ctype.h>
+
+
+char	*clean_str(char	*str)
+{
+	char	*temp;
+	int 	i;
+	int 	j;
+	int		can_write;
+	char	ascii;
+
+	i = -1;
+	j = -1;
+	can_write = 1;
+	temp = malloc(sizeof(char) * 500001);
+	bzero(temp, 500001);
+	while (str[++i])
+	{
+		if (str[i] == '<')
+			can_write = 0;
+		if (str[i] == '>')
+		{
+			can_write = 1;
+			continue;
+		}
+		if (str[i] == '&' && str[i + 1] == '#')
+		{
+			i++;
+			while (!isdigit(str[i]))
+				i++;
+			temp[++j] = atoi(str + i);
+			while (isdigit(str[i]))
+				i++;
+			if (str[i] == ';')
+				i++;
+		}
+		if (can_write)
+			temp[++j] = str[i];
+	}
+	temp[++j] = str[i];
+	return (temp);
+}
 
 int proprio(char *start_bis, char *end, char cont[500001])
 {
@@ -25,28 +67,28 @@ int proprio(char *start_bis, char *end, char cont[500001])
 		end = strstr(start_bis, "</a></strong>");
 		bzero(res, 500001);
 		memcpy(res, start_bis + 11, end - start_bis - 11);
-		printf("|||%s", res);
+		printf("|||proprio: %s ", res);
 		return (1);
 	}
 	else
-		printf("||| ");
+		printf("|||proprio_no ");
 	return (0);
 }
 void date(char *start_bis, char *end, char cont[500001])
 {
 	char res[500001];
 	if ((start_bis = strstr(start_bis+1, "<abbr>")))
-		{
-			// printf("\n|=|date-|");
-			end = strstr(start_bis, "</abbr>");
-			bzero(res, 500001);
-			memcpy(res, start_bis + 6, end - start_bis - 6);
-			printf("|||%s", res);
-		}
+	{
+		// printf("\n|=|date-|");
+		end = strstr(start_bis, "</abbr>");
+		bzero(res, 500001);
+		memcpy(res, start_bis + 6, end - start_bis - 6);
+		printf("|||date: %s ", res);
+	}
 	else
-		{
-			printf("||| ");
-		}
+	{
+		printf("|||date_no ");
+	}
 
 }
 //
@@ -62,29 +104,29 @@ int text(char *start_bis, char *end, char cont[500001])
 	char res[500001];
 	char *test;
 	char *test2;
+	char	*temp;
+
 	if ((start_bis = strstr(start_bis+1, "<span><p>")))
-		{
-			// if (strstr(start_bis, "<a href"))
-			// {
-			// 	text_lien(start_bis, end, cont);
-			// 	return (1);
-			// }
-			end = strstr(start_bis, "</p>");
-			bzero(res, 5000);
-			memcpy(res, start_bis + 9, end - start_bis - 9);
-			printf("|||%s", res);
-			// test = res + 10;
-			// printf("\n\n\n\n\n\n\n1%s\n", test);
-			// test2 = test + 2;
-			// printf("2%s\n", test2);
-			// test = test + 3;
-			// printf("3%s\n\n\n\n\n\n", test);
-			return (1);
-		}
+	{
+		// if (strstr(start_bis, "<a href"))
+		// {
+		// 	text_lien(start_bis, end, cont);
+		// 	return (1);
+		// }
+		end = strstr(start_bis, "</p></span>");
+		bzero(res, 5000);
+		memcpy(res, start_bis + 9, end - start_bis - 9);
+		temp = clean_str(res);
+		bzero(res, 5000);
+		memcpy(res, temp, strlen(temp));
+		free(temp);
+		printf("|||text: %s ", res);
+		return (1);
+	}
 	else
-		{
-			printf("||| ");
-		}
+	{
+		printf("|||text_no ");
+	}
 	return (0);
 }
 int titre(char *start_bis, char *end, char cont[500001])
@@ -96,12 +138,12 @@ int titre(char *start_bis, char *end, char cont[500001])
 			end = strstr(start_bis, "</h3><div class=");
 			bzero(res, 5000);
 			memcpy(res, start_bis + 35, end - start_bis - 35);
-			printf("|||%s", res);
+			printf("|||title: %s ", res);
 			return (1);
 		}
 	else
 	{
-		printf("||| ");
+		printf("|||title_no ");
 	}
 	return (0);
 }
@@ -109,17 +151,17 @@ int auteur(char *start_bis, char *end, char cont[500001])
 {
 	char res[500001];
 	if ((start_bis = strstr(start_bis+1, "</h3><div")))
-		{
-			// printf("\n-Auteur_video-|");
-			end = strstr(start_bis + 7, "<div class");
-			bzero(res, 5000);
-			memcpy(res, start_bis + 24, end - start_bis - 24);
-			printf("|||%s", res);
-			return (1);
-		}
+	{
+		// printf("\n-Auteur_video-|");
+		end = strstr(start_bis + 7, "<div class");
+		bzero(res, 5000);
+		memcpy(res, start_bis + 24, end - start_bis - 24);
+		printf("|||auteur: %s ", res);
+		return (1);
+	}
 	else
 	{
-		printf("||| ");
+		printf("|||auteur_no ");
 	}
 	return (0);
 }
@@ -127,25 +169,25 @@ int nb_comm(char *start_bis, char *end, char cont[500001])
 {
 	char res[500001];
 	if ((start_bis = strstr(start_bis+1, "__tn__=%2AW-R\" class=\"")))
+	{
+		// printf("\n-NB Commentaires-|");
+		if((end = strstr(start_bis, "commentaires</a>")))
 		{
-			// printf("\n-NB Commentaires-|");
-			if((end = strstr(start_bis, "commentaires</a>")))
-			{
-				bzero(res, 5000);
-				memcpy(res, start_bis + 26, end - start_bis - 26);
-				printf("|||%s", res);
-				return (1);
-			}
-			else
-			{
-				printf("||| ");
-			}
+			bzero(res, 5000);
+			memcpy(res, start_bis + 26, end - start_bis - 26);
+			printf("|||nb_comm: %s ", res);
+			return (1);
 		}
+		else
+		{
+			printf("|||nb_comm_no ");
+		}
+	}
 	else
-		{
-			printf("||| ");
-		}
-		return (0);
+	{
+		printf("|||nb_comm_else ");
+	}
+	return (0);
 }
 
 
@@ -159,7 +201,7 @@ int main(int argc, char **argv)
 	char *start_bis;
 	char *end;
 	int i;
-	i = 1;
+	i = 0;
 	int image;
 	image = 0;
 	fd = open(argv[1], O_RDONLY);
@@ -168,40 +210,33 @@ int main(int argc, char **argv)
 	printf("Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil\n");
  	while ((start = strstr(start+1, "role=\"presentation\"><tbody><tr><td class=\"m\"><div ")))
 	{
-		printf("\ncontainer %d:", i);
+		printf("\ncontainer %d:", ++i);
 		end = strstr(start, "avis sur cette publication</a>");
+
 		bzero(cont, 500001);
 		memcpy(cont, start, end - start);
-		// printf("%s\n", cont);
+
 		start_bis = cont;
-		// printf("%s\n", start_bis);
-		// printf("\n%s\n", end);
 		proprio(start_bis, end, cont) == 1 ? image++ : 0;
-		// printf("la");
+
 		start_bis = cont;
 		date(start_bis, end, cont);
-		// printf("le");
+
 		start_bis = cont;
 		text(start_bis, end, cont) == 1 ? image++ : 0;
-		// printf("li");
+
 		start_bis = cont;
 		titre(start_bis, end, cont) == 1 ? image++ : 0;
-		// printf("lo");
+
 		start_bis = cont;
 		auteur(start_bis, end, cont) == 1 ? image++ : 0;
-		// printf("lu");
+
 		start_bis = cont;
 		nb_comm(start_bis, end, cont);
-		// printf("let");
-		i++;
 		if (image == 0)
-		{
 			printf("|||1");
-		}
 		else
-		{
 			printf("||| ");
-		}
 		image = 0;
 	}
 	return (0);

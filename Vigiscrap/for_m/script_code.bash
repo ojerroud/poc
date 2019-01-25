@@ -29,5 +29,5 @@ do
 	fi
 done
 echo ":)"
-gcc news_profil.c
-./a.out $path$id.profile$extension >> result.csv
+# gcc news_profil.c
+# ./a.out $path$id.profile$extension >> result.csv
