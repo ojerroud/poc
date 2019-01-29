@@ -28,7 +28,6 @@ char	*clean_str(char	*str)
 	int 	i;
 	int 	j;
 	int		can_write;
-	char	ascii;
 
 	i = -1;
 	j = -1;
@@ -44,7 +43,7 @@ char	*clean_str(char	*str)
 			can_write = 1;
 			continue;
 		}
-		if (str[i] == '&' && str[i + 1] == '#')
+		if (str[i] == '&' && str[i + 1] == '#' && can_write != 0)
 		{
 			i++;
 			while (!isdigit(str[i]))
@@ -62,7 +61,7 @@ char	*clean_str(char	*str)
 	return (temp);
 }
 
-int		proprio(char *start_bis, char *end, char cont[500001])
+int		proprio(char *start_bis, char *end)
 {
 	char res[500001];
 	if ((start_bis = strstr(start_bis+1, "tn__=CH-R\">")))
@@ -78,7 +77,7 @@ int		proprio(char *start_bis, char *end, char cont[500001])
 		printf("|||proprio_no ");
 	return (0);
 }
-void	date(char *start_bis, char *end, char cont[500001])
+void	date(char *start_bis, char *end)
 {
 	char res[500001];
 	if ((start_bis = strstr(start_bis+1, "<abbr>")))
@@ -100,23 +99,45 @@ void	date(char *start_bis, char *end, char cont[500001])
 //
 // }
 
-int		text(char *start_bis, char *end, char cont[500001])
+// int		text(char *start_bis, char *end)
+// {
+// 	char res[500001];
+// 	char	*temp;
+
+// 	if ((start_bis = strstr(start_bis+1, "<span><p>")))
+// 	{
+// 		// if (strstr(start_bis, "<a href"))
+// 		// {
+// 		// 	text_lien(start_bis, end, cont);
+// 		// 	return (1);
+// 		// }
+// 		end = strstr(start_bis, "</p></span>");
+// 		bzero(res, 5000);
+// 		memcpy(res, start_bis + 9, end - start_bis - 9);
+// 		temp = malloc (500001);
+// 		temp = clean_str(res);
+// 		bzero(res, 5000);
+// 		memcpy(res, temp, strlen(temp));
+// 		free(temp);
+// 		printf("|||text: %s ", res);
+// 		return (1);
+// 	}
+// 	else
+// 		printf("|||text_no ");
+// 	return (0);
+// }
+
+int		text(char *start_bis, char *end)
 {
 	char res[500001];
-	char *test;
-	char *test2;
 	char	*temp;
 
 	if ((start_bis = strstr(start_bis+1, "<span><p>")))
 	{
-		// if (strstr(start_bis, "<a href"))
-		// {
-		// 	text_lien(start_bis, end, cont);
-		// 	return (1);
-		// }
-		end = strstr(start_bis, "</p></span>");
+		end = strstr(start_bis, "</span>");
 		bzero(res, 5000);
 		memcpy(res, start_bis + 9, end - start_bis - 9);
+		temp = malloc (500001);
 		temp = clean_str(res);
 		bzero(res, 5000);
 		memcpy(res, temp, strlen(temp));
@@ -129,7 +150,7 @@ int		text(char *start_bis, char *end, char cont[500001])
 	return (0);
 }
 
-int		titre(char *start_bis, char *end, char cont[500001])
+int		titre(char *start_bis, char *end)
 {
 	char	res[500001];
 
@@ -147,7 +168,7 @@ int		titre(char *start_bis, char *end, char cont[500001])
 	return (0);
 }
 
-int		auteur(char *start_bis, char *end, char cont[500001])
+int		auteur(char *start_bis, char *end)
 {
 	char	res[500001];
 
@@ -165,7 +186,7 @@ int		auteur(char *start_bis, char *end, char cont[500001])
 	return (0);
 }
 
-int		nb_comm(char *start_bis, char *end, char cont[500001])
+int		nb_comm(char *start_bis, char *end)
 {
 	char	res[500001];
 
@@ -188,10 +209,9 @@ int		nb_comm(char *start_bis, char *end, char cont[500001])
 }
 
 
-int		main(int argc, char **argv)
+int		main(int ac, char **av)
 {
 	char buff[500001];
-	char res[500001];
 	char cont[500001];
 	int fd;
 	char *start;
@@ -200,16 +220,21 @@ int		main(int argc, char **argv)
 	int i;
 	int image;
 
+	if (ac != 2)
+	{
+		printf("mauvais nombre d'argument.\n");
+		exit (0);
+	}
 	image = 0;
 	i = 0;
-	fd = open(argv[1], O_RDONLY);
+	fd = open(av[1], O_RDONLY);
 	read(fd, buff, 500001);
 	start = buff;
 	printf("Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil\n");
  	while ((start = strstr(start+1, "role=\"presentation\"><tbody><tr><td class=\"m\"><div ")))
 	{
-		if (is_clone())
-			continue;
+		// if (is_clone())
+		// 	continue;
 		printf("\ncontainer %d:", ++i);
 		end = strstr(start, "avis sur cette publication</a>");
 
@@ -217,27 +242,31 @@ int		main(int argc, char **argv)
 		memcpy(cont, start, end - start);
 
 		start_bis = cont;
-		proprio(start_bis, end, cont) == 1 ? image++ : 0;
+		image = (proprio(start_bis, end) == 1) ? 1 : 0;
 
 		start_bis = cont;
-		date(start_bis, end, cont);
+		date(start_bis, end);
 
 		start_bis = cont;
-		text(start_bis, end, cont) == 1 ? image++ : 0;
+		image = (text(start_bis, end) == 1) ? 1 : 0;
 
 		start_bis = cont;
-		titre(start_bis, end, cont) == 1 ? image++ : 0;
+		image = (titre(start_bis, end) == 1) ? 1 : 0;
 
 		start_bis = cont;
-		auteur(start_bis, end, cont) == 1 ? image++ : 0;
+		image = (auteur(start_bis, end) == 1) ? 1 : 0;
 
 		start_bis = cont;
-		nb_comm(start_bis, end, cont);
+		nb_comm(start_bis, end);
+
 		if (image == 0)
 			printf("|||1");
 		else
 			printf("||| ");
 		image = 0;
+		// printf("passage %d\n", i);
+		// if (i == 2)
+		// 	printf("\n\n%s\n" ,strstr(start+1, "role=\"presentation\"><tbody><tr><td class=\"m\"><div"));
 	}
 	return (0);
 }

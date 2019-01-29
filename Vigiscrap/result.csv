@@ -1,101 +1,452 @@
 -
 
 
-11-----11
+42-----42
 
 Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
 
+container 1:|||proprio_no |||date: 13 septembre 2010, 20:04 |||text_no |||title_no |||&#123;*actor*&#125; a choisi le meilleur chevalier pour mener les guerres dans sa ville. |||nb_comm_else ||| 
+container 2:|||proprio_no |||date: 13 septembre 2010, 12:34 |||text_no |||title_no ||| |||nb_comm_else |||1
 
-10-----11
-
-Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
-
-container 1:|||proprio_no |||date: 7 juillet 2013, 19:06 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 2:|||proprio_no |||date: 8 juin 2013, 13:53 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 3:|||proprio_no |||date: 25 mai 2013, 19:03 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 4:|||proprio_no |||date: 19 mai 2013, 10:38 |||text_no |||title_no |||auteur_no |||nb_comm_no |||1
-container 5:|||proprio_no |||date: 28 avril 2013, 10:02 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-
-9-----11
+41-----42
 
 Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
 
-container 1:|||proprio_no |||date: 13 octobre 2013, 21:42 |||text_no |||title_no |||auteur_no |||nb_comm: 3  |||1
-container 2:|||proprio_no |||date: 12 septembre 2013, 23:10 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 3:|||proprio_no |||date: 10 août 2013, 18:51 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 4:|||proprio_no |||date: 8 juillet 2013, 01:45 |||text_no |||title_no |||auteur_no |||nb_comm: 2  |||1
-container 5:|||proprio_no |||date: 7 juillet 2013, 19:11 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
+container 1:|||proprio_no |||date: 5 avril 2011, 17:17 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 17 mars 2011, 18:07 |||text_no |||title_no |||L&#039;Aquarium de Invin Koneko est maintenant au niveau 3. Invin Koneko a reçu des récompenses pour avoir augmenté de niveau. |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 6 février 2011, 21:24 |||text_no |||title_no ||| |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 6 février 2011, 21:24 |||text_no |||title_no ||| |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 5 février 2011, 21:24 |||text_no |||title_no ||| |||nb_comm_else ||| 
+container 6:|||proprio_no |||date: 23 janvier 2011, 08:43 |||text: voila |||title_no ||| |||nb_comm_else ||| 
+container 7:|||proprio_no |||date: 23 janvier 2011, 00:15 |||text: un jeu tres sympas |||title_no ||| |||nb_comm_else ||| 
 
-8-----11
-
-Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
-
-container 1:|||proprio_no |||date: 6 février 2014, 18:15 |||text : Il a une sale mouille mon gâteau 😫 |||title_no |||auteur_no |||nb_comm: 8  ||| 
-container 2:|||proprio_no |||date: 1 janvier 2014, 00:12 |||text : Année !!! |||title_no |||auteur_no |||nb_comm_else ||| 
-container 3:|||proprio_no |||date: 1 janvier 2014, 00:12 |||text : Bonne nuit !!!!!!! |||title_no |||auteur_no |||nb_comm_else ||| 
-
-7-----11
+40-----42
 
 Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
 
-container 1:|||proprio_no |||date: 8 septembre 2014, 12:28 |||text_no |||title_no |||auteur: youtube.com |||nb_comm_else ||| 
-container 2:|||proprio_no |||date: 16 juin 2014, 23:03 |||text : Mdr il s'est chier dessus   |||title_no |||auteur: youtube.com |||nb_comm_else ||| 
-container 3:|||proprio_no |||date: 2 juin 2014, 23:28 |||text_no |||title_no |||auteur_no |||nb_comm: 7  |||1
-container 4:|||proprio: Les pires snaps et selfies |||date: 21 avril 2014, 23:05 |||text_no |||title_no |||auteur_no |||nb_comm_else ||| 
-container 5:|||proprio: Les pires snaps et selfies |||date: 21 avril 2014, 23:05 |||text_no |||title_no |||auteur_no |||nb_comm_else ||| 
+container 1:|||proprio_no |||date: 15 avril 2011, 12:17 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 14 avril 2011, 15:49 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio_no |||date: 12 avril 2011, 20:42 |||text: extra |||title_no |||gdata.youtube.com |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 12 avril 2011, 20:03 |||text: le 15 AVRIL 2011, n'achetez pas de carburant!!! Tant que le prix demeure aussi haut, N'ACHETEZ QUE LE NÉCESSAIRE pour vos déplacements!! En avril 1997, il y a eu 1 journée sans plein sur le continent en protestation contre le prix d'’essence. Le même soir, le prix a baissé 6.5 cents le litre. PARTAGER SVP, c'est la seul façon de se révolter.. |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 11 avril 2011, 16:57 |||text_no |||title_no ||| |||nb_comm_no |||1
 
-6-----11
-
-Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
-
-container 1:|||proprio_no |||date: 11 décembre 2014, 13:08 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 2:|||proprio_no |||date: 6 décembre 2014, 01:08 |||text : Mdr comme des meuf |||title_no |||auteur_no |||nb_comm: 3  ||| 
-container 3:|||proprio_no |||date: 6 décembre 2014, 01:06 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 4:|||proprio_no |||date: 23 novembre 2014, 20:51 |||text : Putain j'en veut un !!!!!!! |||title_no |||auteur: youtube.com |||nb_comm_else ||| 
-container 5:|||proprio_no |||date: 18 novembre 2014, 12:12 |||text : Attention spolier |||title_no |||auteur: goldenmoustache.com |||nb_comm_else ||| 
-
-5-----11
+39-----42
 
 Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
 
-container 1:|||proprio: Les pires snaps et selfies |||date: 21 avril 2014, 23:05 |||text_no |||title_no |||auteur_no |||nb_comm_else ||| 
-container 2:|||proprio: Les pires snaps et selfies |||date: 21 avril 2014, 23:05 |||text_no |||title_no |||auteur_no |||nb_comm_else ||| 
+container 1:|||proprio_no |||date: 18 avril 2011, 19:38 |||text: superbe  |||title_no |||wat.tv |||nb_comm_no ||| 
+container 2:|||proprio_no |||date: 17 avril 2011, 14:08 |||text: XD |||title_no |||gdata.youtube.com |||nb_comm: 4  ||| 
+container 3:|||proprio_no |||date: 17 avril 2011, 14:07 |||text: ca me rends triste ;) |||title_no |||gdata.youtube.com |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 17 avril 2011, 14:06 |||text: superbe |||title_no |||gdata.youtube.com |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 15 avril 2011, 20:27 |||text_no |||title_no |||actualite-confidentielle.info |||nb_comm: 3  ||| 
 
-4-----11
-
-Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
-
-container 1:|||proprio_no |||date: 18 novembre 2014, 12:12 |||text : Attention spolier |||title_no |||auteur: goldenmoustache.com |||nb_comm_else ||| 
-container 2:|||proprio_no |||date: 8 septembre 2014, 12:28 |||text_no |||title_no |||auteur: youtube.com |||nb_comm_else ||| 
-container 3:|||proprio_no |||date: 16 juin 2014, 23:03 |||text : Mdr il s'est chier dessus   |||title_no |||auteur: youtube.com |||nb_comm_else ||| 
-container 4:|||proprio_no |||date: 2 juin 2014, 23:28 |||text_no |||title_no |||auteur_no |||nb_comm: 7  |||1
-
-3-----11
+38-----42
 
 Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
 
-container 1:|||proprio_no |||date: 1 janvier 2015, 00:15 |||text : Bonne année 2016  Attend t'es sur  Bin 2015 alors |||title_no |||auteur_no |||nb_comm_else ||| 
-container 2:|||proprio_no |||date: 11 décembre 2014, 13:08 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 3:|||proprio_no |||date: 6 décembre 2014, 01:08 |||text : Mdr comme des meuf |||title_no |||auteur_no |||nb_comm: 3  ||| 
-container 4:|||proprio_no |||date: 6 décembre 2014, 01:06 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 5:|||proprio_no |||date: 23 novembre 2014, 20:51 |||text : Putain j'en veut un !!!!!!! |||title_no |||auteur: youtube.com |||nb_comm_else ||| 
+container 1:|||proprio_no |||date: 29 avril 2011, 10:38 |||text: ENFIN apres 8ans d'attente du jeu le plus attendu je vous présente DUKE NUKEM |||title_no |||allocine.fr |||nb_comm_no ||| 
+container 2:|||proprio_no |||date: 28 avril 2011, 08:44 |||text: genial |||title_no |||youtube.com |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 21 avril 2011, 16:03 |||text: Les amis éternels peuvent rester longtemps sans se parler et ne jamais remettre en question leur amitié. Ils peuvent reprendre leur conversation comme s'ils venaient de la terminer, peu importe combien de temps s'est passé ou la distance qui les sépare, ils n'ont aucune rancune. Ils comprennent que la vie est occupée, mais que vous pensez TOUJOURS à eux. Copier et coller si vous avez au moins 1 ami comme ça ! |||title_no ||| |||nb_comm: 5  |||1
+container 4:|||proprio_no |||date: 18 avril 2011, 21:08 |||text: wow les tarés AME SENSIBLE S'ABSTENIR |||title_no |||wat.tv |||nb_comm: 7  ||| 
+container 5:|||proprio_no |||date: 18 avril 2011, 21:07 |||text: lol le mec il a rien XD |||title_no |||wat.tv |||nb_comm_else ||| 
 
-2-----11
-
-Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
-
-container 1:|||proprio: GoPro |||date: 13 novembre 2015, 22:54 |||text : Impressionnant |||title_no |||auteur: help.facebook.com |||nb_comm_else ||| 
-container 2:|||proprio: GoPro |||date: 13 novembre 2015, 22:54 |||text : Anthony Walsh and Matahi Drollet bring us inside some of the biggest barrels Tahiti has to offer in full 360°. For the most immersive experience, click and drag on your desktop, or move your iOS device in any direction. |||title_no |||auteur: help.facebook.com |||nb_comm_else ||| 
-container 3:|||proprio_no |||date: 14 septembre 2015, 19:40 |||text_no |||title_no |||auteur: fanactu.com |||nb_comm_else ||| 
-container 4:|||proprio: AlloCiné |||date: 13 septembre 2015, 12:57 |||text : Qui se souvient de ce dessin-animé ? 😃 |||title_no |||auteur_no |||nb_comm_else ||| 
-container 5:|||proprio: AlloCiné |||date: 13 septembre 2015, 12:57 |||text : Qui se souvient de ce dessin-animé ? 😃 |||title_no |||auteur_no |||nb_comm_else ||| 
-container 6:|||proprio_no |||date: 8 septembre 2015, 17:42 |||text_no |||title_no |||auteur: allocine.fr |||nb_comm_else ||| 
-container 7:|||proprio_no |||date: 9 avril 2015, 16:24 |||text_no |||title_no |||auteur: dailymotion.com |||nb_comm_no ||| 
-
-1-----11
+37-----42
 
 Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
 
-container 1:|||proprio_no |||date: 11 décembre 2017, 20:39 |||text_no |||title_no |||auteur_no |||nb_comm: 4  |||1
-container 2:|||proprio_no |||date: 11 décembre 2017, 20:39 |||text_no |||title_no |||auteur_no |||nb_comm_else |||1
-container 3:|||proprio_no |||date: 14 janvier 2016, 18:39 |||text_no |||title_no |||auteur: allocine.fr |||nb_comm_else ||| 
+container 1:|||proprio_no |||date: 2 mai 2011, 23:28 |||text: [ Beaucoup de gens croient penser alors qu’ils ne font que réarranger leurs préjugés. ] |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 2 mai 2011, 23:27 |||text: La philosophie est la fille de la poésie. Ne me demandez pas qui est le père. |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio_no |||date: 2 mai 2011, 23:19 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio_no |||date: 30 avril 2011, 21:20 |||text: genialissime |||title_no |||youtube.com |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 30 avril 2011, 09:33 |||text: need ca en france =O |||title_no |||youtube.com |||nb_comm_else ||| 
+
+36-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 11 mai 2011, 18:23 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 11 mai 2011, 14:46 |||text: hihi |||title_no |||Invin is excited about this brand new Comb Jellyfish in Happy Aquarium and has extra coins to share with you!   |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 11 mai 2011, 14:45 |||text: .... |||title_no |||Invin is excited about this brand new Starter Chest in Happy Aquarium and has extra coins to share with you!  |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 7 mai 2011, 21:34 |||text: WHOAAA O.o |||title_no |||youtube.com |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 6 mai 2011, 23:46 |||text: superbe |||title_no |||youtube.com |||nb_comm_else ||| 
+
+35-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 14 mai 2011, 20:09 |||text: mdr  |||title_no |||youtube.com |||nb_comm_else ||| 
+container 2:|||proprio_no |||date: 13 mai 2011, 19:49 |||text: whaow demanciel |||title_no |||youtube.com |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 13 mai 2011, 12:09 |||text: COLLE CE STATUT SUR TON MUR ET REGARDE COMMENT TES AMIS TE VOIENT : • 1. Alcoolique • 2. Je t'épouse • 3. Mignon(e) • 4. Bavard(e) ...• 5. Fêtard(e) • 6. Adorable • 7. Gentil(le) • 8. Sexy • 9. Je t'aime • 10. Con(ne) • 11. Mystérieux(e) • 12. Folle • 13. Calme • 14. Insupportable • 15. Amoureux • 16. Sortir avec moi • 17. Méchant(e) • 18.Une personne bien Autres ? précise :3Afficher la suit |||title_no ||| |||nb_comm: 9  |||1
+container 4:|||proprio_no |||date: 12 mai 2011, 21:15 |||text: superbe  |||title_no |||youtube.com |||nb_comm_else ||| 
+container 5:|||proprio: Dany Dubost |||date: 11 mai 2011, 19:20 |||text: ca va faire 1 an :) |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio: Dany Dubost |||date: 11 mai 2011, 19:20 |||text_no |||title_no ||| |||nb_comm_else |||1
+
+34-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 20 mai 2011, 20:44 |||text: genial |||title_no |||youtube.com |||nb_comm_else ||| 
+container 2:|||proprio_no |||date: 20 mai 2011, 06:12 |||text: =- |||title_no |||youtube.com |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 19 mai 2011, 17:03 |||text_no |||title_no ||| |||nb_comm: 3  |||1
+container 4:|||proprio_no |||date: 19 mai 2011, 16:42 |||text: ohlala XD// O.O |||title_no |||youtube.com |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 16 mai 2011, 18:57 |||text: genial la video XD=== |||title_no |||youtube.com |||nb_comm_else ||| 
+
+33-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 27 mai 2011, 10:16 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 25 mai 2011, 18:19 |||text: :) |||title_no |||youtube.com |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 25 mai 2011, 12:32 |||text: XD |||title_no |||youtube.com |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 23 mai 2011, 18:12 |||text_no |||title_no ||| |||nb_comm_no |||1
+container 5:|||proprio_no |||date: 21 mai 2011, 21:11 |||text: XD genial |||title_no |||youtube.com |||nb_comm_else ||| 
+
+32-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 12 juin 2011, 15:48 |||text: magnifique |||title_no |||youtube.com |||nb_comm_else ||| 
+container 2:|||proprio_no |||date: 10 juin 2011, 19:49 |||text: ^^  |||title_no |||jebuzz.fr |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 7 juin 2011, 11:41 |||text_no |||title_no ||| |||nb_comm_no |||1
+container 4:|||proprio_no |||date: 2 juin 2011, 19:37 |||text: legendary !!!  ca faisait longtemps ^^ |||title_no |||youtube.com |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 27 mai 2011, 20:10 |||text: :) |||title_no |||youtube.com |||nb_comm_else ||| 
+
+31-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 22 juin 2011, 21:07 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 11 mai 2011, 14:40 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio_no |||date: 1 mai 2011, 20:52 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio_no |||date: 22 juin 2011, 12:45 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 16 juin 2011, 12:58 |||text_no |||title_no |||jebuzz.fr |||nb_comm_no ||| 
+container 6:|||proprio_no |||date: 13 juin 2011, 20:26 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 7:|||proprio_no |||date: 12 juin 2011, 15:52 |||text: tres bien faites comme video (et ce n'est que du 720 au max ^^) |||title_no |||youtube.com |||nb_comm_else ||| 
+
+30-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 28 juin 2011, 16:49 |||text: On ma donné la lettre H Ce que j'aime: Haribo Ce que je n'aime pas: Harry Poter Une personne: hugo l'escargot Quelque chose de triste: huer  Une Ville : herblay (sisi ca existe) Aime ceci et vous tu aura une lettre ! |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 27 juin 2011, 17:33 |||text: preums |||title_no ||| |||nb_comm: 2  |||1
+container 3:|||proprio_no |||date: 27 juin 2011, 16:24 |||text: sympas ^^  |||title_no |||youtube.com |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 26 juin 2011, 22:52 |||text: On ma donné la lettre D Ce que j'aime:duke nukem , Druss , delirer ect... Ce que je n'aime pas: Derbi (les motos ^^ [il fallait bien quelque chose :putnam: ]) Une personne: debile Quelque chose de triste: Dune Un jeu video: duke nukem forever Aime mon statut et je te donnerait une lettre. |||title_no ||| |||nb_comm: 2  |||1
+container 5:|||proprio_no |||date: 23 juin 2011, 18:05 |||text: ahhhh souvenir que de souvenir !!! |||title_no |||youtube.com |||nb_comm_no ||| 
+
+29-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 4 juillet 2011, 15:51 |||text_no |||title_no ||| |||nb_comm: 5  |||1
+container 2:|||proprio_no |||date: 4 juillet 2011, 15:42 |||text: XD ca depote |||title_no |||youtube.com |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 28 juin 2011, 17:42 |||text: On ma donné la lettre K Ce que j'aime: KiliK Ce que je n'aime pas : la lettre k Une personne: Katie perry Quelque chose de triste: keno Une Ville : Kirghize Aime ceci et vous tu aura une lettre !!! ^^ |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio_no |||date: 28 juin 2011, 17:05 |||text: On ma donné la lettre O Ce que j'aime: olive Ce que je n'aime pas:Ortie Une personne: Oscar wild Quelque chose de triste: ogive ,orvai Une Ville : Okinawa Aime ceci et vous tu aura une lettre !!! XD |||title_no ||| |||nb_comm: 3  |||1
+container 5:|||proprio_no |||date: 28 juin 2011, 16:53 |||text_no |||title_no |||lewebpedagogique.com |||nb_comm_else ||| 
+
+28-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 14 juillet 2011, 20:39 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+container 2:|||proprio_no |||date: 14 juillet 2011, 00:48 |||text: &quot;[TUoD]&quot; CA c'est une bonne team !!! |||title_no ||| |||nb_comm: 6  |||1
+container 3:|||proprio_no |||date: 12 juillet 2011, 23:26 |||text: j'adore cette musique !!!! |||title_no |||youtube.com |||nb_comm_no ||| 
+container 4:|||proprio_no |||date: 11 juillet 2011, 17:38 |||text: geniale XD (pour les incultes c'est une parodie de starcraft 2) |||title_no |||youtube.com |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 6 juillet 2011, 10:47 |||text: La beauté d'une femme n'est pas dans son visage ou sa façon d'arranger ses cheveux, la beauté d'une femme se voit dans ses yeux, car c'est la porte ouverte sur son coeur, la source de son amour. la beauté physique est superficielle, la beauté de l'âme est éternelle... copier sur votre mur si vous êtes en accord ;) |||title_no ||| |||nb_comm: 6  |||1
+
+27-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 28 juillet 2011, 17:45 |||text: sympas  |||title_no |||youtube.com |||nb_comm_else ||| 
+container 2:|||proprio_no |||date: 28 juillet 2011, 17:30 |||text: superbe musique!! |||title_no |||youtube.com |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 27 juillet 2011, 13:14 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 23 juillet 2011, 10:41 |||text: Deus Ex Human Revolution Decouvrez la verite sur Sarif Industries |||title_no |||youtube.com |||nb_comm_no ||| 
+container 5:|||proprio_no |||date: 17 juillet 2011, 13:20 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+
+26-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 16 août 2011, 17:38 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 16 août 2011, 17:34 |||text: Peut-être que nous sommes tous un rêve d'une personne .. |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio_no |||date: 9 août 2011, 10:45 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 5 août 2011, 16:48 |||text: de retour |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 30 juillet 2011, 15:52 |||text: La vidéo la plus épique de Youtube ? Surement ♥ |||title_no |||youtube.com |||nb_comm_else ||| 
+
+25-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 6 septembre 2011, 20:32 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+container 2:|||proprio_no |||date: 5 septembre 2011, 10:46 |||text: CA c'est de la securité !!!! |||title_no |||youtube.com |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 27 août 2011, 01:42 |||text: Si tu as une Maman qui s'est toujours battue, qui n'a jamais baissé les bras, qui a toujours tout fait pour toi malgré les difficultés de la vie même quand la chance n'était pas au rendez-vous. Si tu as une mère comme la mienne, avec laquelle tu peux aller dans la rue et dire fièrement :&quot; c'est ma Maman &quot; , fais lui honneur et écris ceci sur ton mur.♥ |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio_no |||date: 17 août 2011, 22:02 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 17 août 2011, 22:00 |||text_no |||title_no ||| |||nb_comm_else |||1
+
+24-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 7 octobre 2011, 21:21 |||text: O.o |||title_no |||youtube.com |||nb_comm_else ||| 
+container 2:|||proprio_no |||date: 1 octobre 2011, 10:46 |||text: LA FRANCE NOUS A EU IL NE FAUT PAS QUE SARKOMENCE |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Diablo |||date: 22 septembre 2011, 21:09 |||text: This is amazing XD |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Diablo |||date: 22 septembre 2011, 21:09 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 6 septembre 2011, 21:19 |||text: Stop le racisme, devenez comme Mario, un italien, crée par les japonais, qui parle anglais, qui ressemble à un Mexicain, qui cours comme un congolais, qui saute comme un jamaïcain, et qui récolte des pièces comme un juif :3 |||title_no ||| |||nb_comm: 2  |||1
+container 6:|||proprio_no |||date: 6 septembre 2011, 20:56 |||text: * Sone has joined #chat &lt;Sone&gt; allé ciao &lt;Cyandow&gt; ?? &lt;Sone&gt; Haha donc t'es con !  &lt;Cyandow&gt; Ben non &gt;&lt;  &lt;Sone&gt; Tu connais la Blague du con qui dit non ?? &lt;Cyandow&gt; oui... &lt;Sone&gt; ca va ? &lt;Sone&gt; Salut ! (lis a l'envers maintenant) * Sone has quit #chat &lt;Cyandow&gt; rien compris... |||title_no ||| |||nb_comm_else |||1
+
+23-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 20 janvier 2012, 12:26 |||text: Coupez la tête d'une hydre et elle repoussera encore plus effrayante que la précédente ... -Megaupload- |||title_no ||| |||nb_comm: 5  |||1
+
+22-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 1 avril 2012, 08:43 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 29 mars 2012, 21:30 |||text: Windows Error Remix  légendaire !!!!! |||title_no |||youtube.com |||nb_comm_else ||| 
+container 3:|||proprio_no |||date: 29 mars 2012, 13:42 |||text_no |||title_no |||youtube.com |||nb_comm: 2  ||| 
+container 4:|||proprio_no |||date: 28 février 2012, 20:18 |||text: magnifique :D |||title_no |||youtube.com |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 20 février 2012, 13:29 |||text_no |||title_no ||| |||nb_comm_else |||1
+
+21-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 17 avril 2012, 16:23 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 15 avril 2012, 23:55 |||text_no |||title_no ||| |||nb_comm: 3  |||1
+container 3:|||proprio_no |||date: 13 avril 2012, 15:43 |||text: XD |||title_no |||youtube.com |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 13 avril 2012, 15:40 |||text: excellent |||title_no |||youtube.com |||nb_comm_else ||| 
+container 5:|||proprio: Les Sparkles de Villeneuve St Georges - Football Américain Féminin |||date: 5 avril 2012, 21:44 |||text: Calendrier Sparkles 2012 Copyright Remi Sevenonethree |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio: Les Sparkles de Villeneuve St Georges - Football Américain Féminin |||date: 5 avril 2012, 21:44 |||text: Calendrier Sparkles 2012 Copyright Remi Sevenonethree |||title_no ||| |||nb_comm_else |||1
+
+20-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 7 juillet 2012, 17:12 |||text: the new!!! |||title_no |||youtube.com |||nb_comm_else ||| 
+container 2:|||proprio: Le monde des Memes |||date: 20 juin 2012, 10:42 |||text: Nous sommes pas anonymous nous sommes les anonymUs  :) |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Le monde des Memes |||date: 20 juin 2012, 10:42 |||text: Nous sommes pas anonymous nous sommes les anonymUs  :) |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio_no |||date: 1 mai 2012, 15:18 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 28 avril 2012, 12:09 |||text: TAPEZ  zerg rush   sur googl ET ATTENDEZ (ce n'est pas un virus )(c'est une pub de blizzard pour sc2) |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio_no |||date: 18 avril 2012, 14:06 |||text: excellent |||title_no |||koreus.com |||nb_comm_else ||| 
+
+19-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Arrête d&#039;être jalouse, t&#039;es la plus belle à mes yeux. |||date: 28 août 2012, 22:10 |||text: je pense à une rousse  |||title_no ||| |||nb_comm: 2  |||1
+container 2:|||proprio: Arrête d&#039;être jalouse, t&#039;es la plus belle à mes yeux. |||date: 28 août 2012, 22:10 |||text: Aime si tu connais cette personne ._. |||title_no ||| |||nb_comm: 2  |||1
+container 3:|||proprio: Gones de Lyon |||date: 15 août 2012, 13:23 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Gones de Lyon |||date: 15 août 2012, 13:23 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 9 août 2012, 21:53 |||text: excellent |||title_no |||youtube.com |||nb_comm_else ||| 
+container 6:|||proprio: French Trolls. |||date: 9 août 2012, 00:26 |||text: XD |||title_no ||| |||nb_comm_else |||1
+container 7:|||proprio: French Trolls. |||date: 9 août 2012, 00:26 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 8:|||proprio: Lets go Gamers |||date: 2 août 2012, 14:26 |||text: I love birds. |||title_no ||| |||nb_comm_else |||1
+container 9:|||proprio: Lets go Gamers |||date: 2 août 2012, 14:26 |||text: I love birds. |||title_no ||| |||nb_comm_else |||1
+
+18-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Derp |||date: 25 octobre 2012, 20:03 |||text: HAHA |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: Derp |||date: 25 octobre 2012, 20:03 |||text: LOOL ! |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Derp |||date: 25 octobre 2012, 20:00 |||text: XD |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Derp |||date: 25 octobre 2012, 20:00 |||text: Vous aussi ? :3 |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio: Gones de Lyon |||date: 25 octobre 2012, 19:49 |||text: Et hop !!! le premier article de la saison dans le journal le progrès de dimanche dernier.... et je vous invite tous aussi à visiter le profil FB de Claude Chabot, adjoint aux sports du 6ème, qui a relayé l'info sur sa page en faisant un petit commentaire.... |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio: Gones de Lyon |||date: 25 octobre 2012, 19:49 |||text: Et hop !!! le premier article de la saison dans le journal le progrès de dimanche dernier.... et je vous invite tous aussi à visiter le profil FB de Claude Chabot, adjoint aux sports du 6ème, qui a relayé l'info sur sa page en faisant un petit commentaire.... |||title_no ||| |||nb_comm_else |||1
+container 7:|||proprio: Trolls de Geek |||date: 29 septembre 2012, 12:33 |||text: EN GROS. |||title_no ||| |||nb_comm_else |||1
+container 8:|||proprio: Trolls de Geek |||date: 29 septembre 2012, 12:33 |||text: EN GROS. |||title_no ||| |||nb_comm_else |||1
+
+17-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: French Trolls. |||date: 19 décembre 2012, 13:49 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: French Trolls. |||date: 19 décembre 2012, 13:49 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio_no |||date: 10 décembre 2012, 14:29 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+container 4:|||proprio: French Trolls. |||date: 9 décembre 2012, 21:34 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio: French Trolls. |||date: 9 décembre 2012, 21:34 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio_no |||date: 6 décembre 2012, 19:35 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+container 7:|||proprio: Arrête d&#039;être jalouse, t&#039;es la plus belle à mes yeux. |||date: 6 décembre 2012, 19:23 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 8:|||proprio: Arrête d&#039;être jalouse, t&#039;es la plus belle à mes yeux. |||date: 6 décembre 2012, 19:23 |||text_no |||title_no ||| |||nb_comm_else |||1
+
+16-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Trolls de Geek |||date: 24 janvier 2013, 21:54 |||text: Non ce n'est pas ironique, les MMO sont réellement simples |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: Trolls de Geek |||date: 24 janvier 2013, 21:54 |||text: Non ce n'est pas ironique, les MMO sont réellement simples |||title_no ||| |||nb_comm_else |||1
+
+15-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Trolls de Geek |||date: 20 avril 2013, 17:03 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: Trolls de Geek |||date: 20 avril 2013, 17:03 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio_no |||date: 30 mars 2013, 22:30 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+container 4:|||proprio: Trolls de Geek |||date: 7 mars 2013, 16:06 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio: Trolls de Geek |||date: 7 mars 2013, 16:06 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio_no |||date: 7 février 2013, 21:01 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+
+14-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Trolls de Geek |||date: 12 juin 2013, 20:39 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: Trolls de Geek |||date: 12 juin 2013, 20:39 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Trolls de Geek |||date: 4 juin 2013, 15:32 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Trolls de Geek |||date: 4 juin 2013, 15:32 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 11 mai 2013, 12:05 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+container 6:|||proprio_no |||date: 7 mai 2013, 13:50 |||text_no |||title_no |||youtube.com |||nb_comm_else ||| 
+
+13-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 3 septembre 2013, 15:54 |||text: wow violent |||title_no |||CANALPLUS.FR |||nb_comm_else ||| 
+container 2:|||proprio_no |||date: 3 septembre 2013, 15:25 |||text: qui me défie :P |||title_no |||hitek.fr |||nb_comm: 5  ||| 
+container 3:|||proprio: Trolls de Geek |||date: 23 août 2013, 00:18 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Trolls de Geek |||date: 23 août 2013, 00:18 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio: Trolls de Geek |||date: 22 août 2013, 13:04 |||text_no |||title_no ||| |||nb_comm_no |||1
+container 6:|||proprio: Trolls de Geek |||date: 22 août 2013, 13:04 |||text_no |||title_no ||| |||nb_comm_no |||1
+container 7:|||proprio_no |||date: 21 août 2013, 16:20 |||text_no |||title_no ||| |||nb_comm_else ||| 
+container 8:|||proprio_no |||date: 2 août 2013, 18:50 |||text_no |||title_no ||| |||nb_comm_else ||| 
+container 9:|||proprio_no |||date: 27 février 2013, 23:25 |||text_no |||title_no ||| |||nb_comm_else ||| 
+
+12-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 27 septembre 2013, 22:35 |||text: woaw |||title_no |||youtube.com |||nb_comm_else ||| 
+container 2:|||proprio: Derp |||date: 24 septembre 2013, 19:48 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Derp |||date: 24 septembre 2013, 19:48 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Hitek |||date: 24 septembre 2013, 19:45 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio: Hitek |||date: 24 septembre 2013, 19:45 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio_no |||date: 24 septembre 2013, 19:44 |||text_no |||title_no |||demotivateur.fr |||nb_comm_else ||| 
+container 7:|||proprio: Gones de Lyon |||date: 23 septembre 2013, 11:31 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 8:|||proprio: Gones de Lyon |||date: 23 septembre 2013, 11:31 |||text_no |||title_no ||| |||nb_comm_else |||1
+
+11-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Hitek |||date: 20 octobre 2013, 18:11 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: Hitek |||date: 20 octobre 2013, 18:11 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Hitek |||date: 9 octobre 2013, 19:16 |||text: N'oubliez pas d'aller faire un tour sur notre Zone 42 : http:// |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Hitek |||date: 9 octobre 2013, 19:16 |||text: N'oubliez pas d'aller faire un tour sur notre Zone 42 : http:// |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio: Trolls de Geek |||date: 5 octobre 2013, 21:09 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio: Trolls de Geek |||date: 5 octobre 2013, 21:09 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 7:|||proprio: GAME ONE |||date: 1 octobre 2013, 20:02 |||text: ^ ^ |||title_no ||| |||nb_comm_else |||1
+container 8:|||proprio: GAME ONE |||date: 1 octobre 2013, 20:02 |||text: ^ ^ |||title_no ||| |||nb_comm_else |||1
+
+10-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: 9GAG |||date: 28 novembre 2013, 13:05 |||text: We have 5 cats. This happens daily. http:// |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: 9GAG |||date: 28 novembre 2013, 13:05 |||text: We have 5 cats. This happens daily. http:// |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Trolls de Geek |||date: 23 novembre 2013, 18:10 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Trolls de Geek |||date: 23 novembre 2013, 18:10 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 22 novembre 2013, 15:49 |||text_no |||title_no |||123-videos.fr |||nb_comm_else ||| 
+container 6:|||proprio_no |||date: 24 octobre 2013, 19:10 |||text_no |||title_no |||www.demotivateur.fr |||nb_comm_else ||| 
+container 7:|||proprio_no |||date: 20 octobre 2013, 20:59 |||text_no |||title_no |||demotivateur.fr |||nb_comm_else ||| 
+
+9-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: 9GAG |||date: 22 décembre 2013, 14:25 |||text: Only way to survive in this world. http:// |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: 9GAG |||date: 22 décembre 2013, 14:25 |||text: Only way to survive in this world. http:// |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Hitek |||date: 11 décembre 2013, 07:59 |||text: Brainsssss ! |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Hitek |||date: 11 décembre 2013, 07:59 |||text: Brainsssss ! |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 11 décembre 2013, 07:57 |||text_no |||title_no |||demotivateur.fr |||nb_comm_else ||| 
+container 6:|||proprio_no |||date: 10 décembre 2013, 09:30 |||text_no |||title_no |||dailymotion.com |||nb_comm_else ||| 
+
+8-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 3 septembre 2013, 15:25 |||text: qui me défie :P |||title_no |||hitek.fr |||nb_comm: 5  ||| 
+
+7-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Derp |||date: 24 septembre 2013, 19:48 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: Derp |||date: 24 septembre 2013, 19:48 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Hitek |||date: 24 septembre 2013, 19:45 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Hitek |||date: 24 septembre 2013, 19:45 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio_no |||date: 24 septembre 2013, 19:44 |||text_no |||title_no |||demotivateur.fr |||nb_comm_else ||| 
+container 6:|||proprio: Gones de Lyon |||date: 23 septembre 2013, 11:31 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 7:|||proprio: Gones de Lyon |||date: 23 septembre 2013, 11:31 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 8:|||proprio_no |||date: 3 septembre 2013, 15:54 |||text: wow violent |||title_no |||CANALPLUS.FR |||nb_comm_else ||| 
+
+6-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Hitek |||date: 9 octobre 2013, 19:16 |||text: N'oubliez pas d'aller faire un tour sur notre Zone 42 : http:// |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: Hitek |||date: 9 octobre 2013, 19:16 |||text: N'oubliez pas d'aller faire un tour sur notre Zone 42 : http:// |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Trolls de Geek |||date: 5 octobre 2013, 21:09 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Trolls de Geek |||date: 5 octobre 2013, 21:09 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio: GAME ONE |||date: 1 octobre 2013, 20:02 |||text: ^ ^ |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio: GAME ONE |||date: 1 octobre 2013, 20:02 |||text: ^ ^ |||title_no ||| |||nb_comm_else |||1
+container 7:|||proprio_no |||date: 27 septembre 2013, 22:35 |||text: woaw |||title_no |||youtube.com |||nb_comm_else ||| 
+
+5-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Trolls de Geek |||date: 23 novembre 2013, 18:10 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: Trolls de Geek |||date: 23 novembre 2013, 18:10 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio_no |||date: 22 novembre 2013, 15:49 |||text_no |||title_no |||123-videos.fr |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 24 octobre 2013, 19:10 |||text_no |||title_no |||www.demotivateur.fr |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 20 octobre 2013, 20:59 |||text_no |||title_no |||demotivateur.fr |||nb_comm_else ||| 
+container 6:|||proprio: Hitek |||date: 20 octobre 2013, 18:11 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 7:|||proprio: Hitek |||date: 20 octobre 2013, 18:11 |||text_no |||title_no ||| |||nb_comm_else |||1
+
+4-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio: Hitek |||date: 11 décembre 2013, 07:59 |||text: Brainsssss ! |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio: Hitek |||date: 11 décembre 2013, 07:59 |||text: Brainsssss ! |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio_no |||date: 11 décembre 2013, 07:57 |||text_no |||title_no |||demotivateur.fr |||nb_comm_else ||| 
+container 4:|||proprio_no |||date: 10 décembre 2013, 09:30 |||text_no |||title_no |||dailymotion.com |||nb_comm_else ||| 
+container 5:|||proprio: 9GAG |||date: 28 novembre 2013, 13:05 |||text: We have 5 cats. This happens daily. http:// |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio: 9GAG |||date: 28 novembre 2013, 13:05 |||text: We have 5 cats. This happens daily. http:// |||title_no ||| |||nb_comm_else |||1
+
+3-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 4 janvier 2014, 13:14 |||text: HAHA excellent!!! XDDDDD |||title_no |||www.demotivateur.fr |||nb_comm: 2  ||| 
+container 2:|||proprio_no |||date: 2 janvier 2014, 21:07 |||text: plus de téléphone avant un bon moment |||title_no ||| |||nb_comm: 5  |||1
+container 3:|||proprio: Trolls de Geek |||date: 1 janvier 2014, 11:16 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Trolls de Geek |||date: 1 janvier 2014, 11:16 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 5:|||proprio: 9GAG |||date: 22 décembre 2013, 14:25 |||text: Only way to survive in this world. http:// |||title_no ||| |||nb_comm_else |||1
+container 6:|||proprio: 9GAG |||date: 22 décembre 2013, 14:25 |||text: Only way to survive in this world. http:// |||title_no ||| |||nb_comm_else |||1
+
+2-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 21 mars 2014, 16:39 |||text_no |||title_no |||hitek.fr |||nb_comm: 2  ||| 
+container 2:|||proprio: Demotivateur |||date: 16 mars 2014, 22:36 |||text: Une semaine comme les autres... http:// |||title_no ||| |||nb_comm_else |||1
+container 3:|||proprio: Demotivateur |||date: 16 mars 2014, 22:36 |||text: Une semaine comme les autres... http:// |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio: Hitek |||date: 19 février 2014, 18:32 |||text: quand il n'y a plus de placeXDD |||title_no ||| |||nb_comm_no |||1
+container 5:|||proprio: Hitek |||date: 19 février 2014, 18:32 |||text: Proposé par Émeric Leblond |||title_no ||| |||nb_comm_no |||1
+container 6:|||proprio: Trolls de Geek |||date: 26 janvier 2014, 23:03 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 7:|||proprio: Trolls de Geek |||date: 26 janvier 2014, 23:03 |||text_no |||title_no ||| |||nb_comm_else |||1
+
+1-----42
+
+Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil
+
+container 1:|||proprio_no |||date: 15 novembre 2015, 08:46 |||text_no |||title_no ||| |||nb_comm_else |||1
+container 2:|||proprio_no |||date: 10 mars 2015, 12:23 |||text: un petit Venom :DD |||title_no ||| |||nb_comm: 23  |||1
+container 3:|||proprio_no |||date: 27 novembre 2014, 20:37 |||text: En raison du fait que Facebook a choisi d'impliquer un logiciel qui permettra le vol de mes renseignements personnels, je déclare ce qui suit : À cette date du 26 novembre 2014, en réponse aux nouvelles lignes directrices de Facebook et en vertu des articles L.111, 112 et 113 du code de la propriété intellectuelle, |||title_no ||| |||nb_comm_else |||1
+container 4:|||proprio_no |||date: 16 septembre 2014, 08:21 |||text_no |||title_no |||demotivateur.fr |||nb_comm_else ||| 
+container 5:|||proprio_no |||date: 14 juin 2014, 21:47 |||text: https:// |||title_no |||youtube.com |||nb_comm_else ||| 
