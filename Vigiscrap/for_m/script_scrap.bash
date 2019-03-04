@@ -52,7 +52,7 @@ while [ 1 ]
 do
 	timeline_url=`echo "$timeline_url" | sed 's/&amp;/\&/g'`
 	timeline_src=`getPage "$timeline_url" "$cookies"`
-	echo "$timeline_src" > "$path$id.timeline$extension"
+	# echo "$timeline_src" > "$path$id.timeline$extension"
 	echo "$timeline_src" > "$path$id.$I.timeline$extension"
 	timeline_url=$(getDisplayMoreUrlByTimelineSrc "$timeline_src")
 	I=$(($I+1))

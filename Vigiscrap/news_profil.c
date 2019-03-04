@@ -6,7 +6,7 @@
 /*   By: ojerroud <ojerroud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 15:54:16 by vle-gal           #+#    #+#             */
-/*   Updated: 2019/03/04 16:02:28 by ojerroud         ###   ########.fr       */
+/*   Updated: 2019/03/04 17:15:31 by ojerroud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void friend(char *start_bis, char *end, char cont[100001])
 		// printf("\n-amis-|");
 		end = strstr(start_bis, "</a>");
 		bzero(res, 100000);
-		memcpy(res, start_bis + 23, end - start_bis - 23);
+		memcpy(res, start_bis + 24, end - start_bis - 25);
 		printf("%s", res);
 	}
 	else
@@ -145,7 +145,8 @@ char	*clean_str(char *str)
 			{
 				if (!to_check[k + 1])
 				{
-					tmp[++j] = '\n';
+					tmp[++j] = '\\';
+					tmp[++j] = 'n';
 					i += k + 1;
 					break ;
 				}
@@ -181,7 +182,7 @@ void citation(char *start_bis, char *end, char cont[100001])
 		bzero(res, 100000);
 		memcpy(res, start_bis + 267, end - start_bis - 267);
 		line_break(res);
-		printf(",\n %s", res);
+		printf(",%s", res);
 	}
 	else
 	{
@@ -203,7 +204,7 @@ int main(int argc, char **argv)
 	start = buff;
 	while ((start = strstr(start+1, "objects")))
 	{
-		printf("\n\nProfil:\n\namis, ville actuel, ville d'origine, sexe, citation\n");
+		printf("Profil\nAmis, Ville actuel, Ville d'origine, Sexe, Citation\n");
 		end = strstr(start, "/html");
 		bzero(cont, 100000);
 		memcpy(cont, start, end - start);
@@ -218,7 +219,6 @@ int main(int argc, char **argv)
 		start_bis = cont;
 		citation(start_bis, end, cont);
 		start_bis = cont;
-		printf("\n");
 	}
 	return (0);
 }

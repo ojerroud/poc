@@ -6,7 +6,7 @@
 /*   By: ojerroud <ojerroud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 15:54:16 by vle-gal           #+#    #+#             */
-/*   Updated: 2019/03/04 15:59:55 by ojerroud         ###   ########.fr       */
+/*   Updated: 2019/03/04 17:11:21 by ojerroud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -205,7 +205,7 @@ int		main(int ac, char **av)
 	int i;
 	int image;
 
-	if (ac != 2)
+	if (ac != 3)
 	{
 		printf("mauvais nombre d'argument.\n");
 		exit (0);
@@ -215,12 +215,13 @@ int		main(int ac, char **av)
 	fd = open(av[1], O_RDONLY);
 	read(fd, buff, 500001);
 	start = buff;
-	printf("Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil\n");
+	// printf("Timeline, Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil\n");
  	while ((start = strstr(start+1, "role=\"presentation\"><tbody><tr><td class=\"m\"><div ")))
 	{
 		// if (is_clone())
 		// 	continue;
-		printf("\ncontainer %d", ++i);
+		printf("%s,", av[2]);
+		printf("container %d", ++i);
 		end = strstr(start, "avis sur cette publication</a>");
 
 		bzero(cont, 500001);
@@ -245,9 +246,9 @@ int		main(int ac, char **av)
 		nb_comm(start_bis, end);
 
 		if (image == 0)
-			printf(",1");
+			printf(",1\n");
 		else
-			printf(",0");
+			printf(",0\n");
 		image = 0;
 		// printf("passage %d\n", i);
 		// if (i == 2)
