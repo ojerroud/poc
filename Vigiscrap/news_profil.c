@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   news_container.c                                   :+:      :+:    :+:   */
+/*   news_profil.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vle-gal <vle-gal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ojerroud <ojerroud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 15:54:16 by vle-gal           #+#    #+#             */
-/*   Updated: 2018/09/06 16:32:13 by vle-gal          ###   ########.fr       */
+/*   Updated: 2019/03/04 14:21:06 by ojerroud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,6 +125,49 @@ void sexe(char *start_bis, char *end, char cont[100001])
 	}
 }
 
+char	*clean_str(char *str)
+{
+	char	*tmp;
+	int		i = -1;
+	int		j = -1;
+	int		k;
+	char	*to_check;
+
+	to_check = malloc(100001);
+	tmp = malloc(100001);
+	to_check = strcpy(to_check, "<br />");
+	while (str[++i])
+	{
+		if (str[i] == to_check[0])
+		{
+			k = 0;
+			while (to_check[k] == str[i + k] && str[i])
+			{
+				if (!to_check[k + 1])
+				{
+					tmp[++j] = '\n';
+					i += k + 1;
+					break ;
+				}
+				k++;
+			}
+		}
+		tmp[++j] = str[i];
+	}
+	return (tmp);
+}
+
+void	line_break(char *str)
+{
+	char	*temp;
+
+	temp = malloc(100001);
+	temp = clean_str(str);
+	bzero(str, 100001);
+	memcpy(str, temp, strlen(temp));
+	free(temp);
+}
+
 void citation(char *start_bis, char *end, char cont[100001])
 {
 	char res[100001];
@@ -135,12 +178,13 @@ void citation(char *start_bis, char *end, char cont[100001])
 		end = strstr(start_bis, "</div></div></div></div>");
 		bzero(res, 100000);
 		memcpy(res, start_bis + 267, end - start_bis - 267);
-		printf("|||%s", res);
+		line_break(res);
+		printf("|||\n %s", res);
 	}
 	else
-		{
+	{
 		printf("||| ");
-		}
+	}
 }
 
 int main(int argc, char **argv)
