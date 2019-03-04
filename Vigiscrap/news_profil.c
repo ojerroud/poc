@@ -6,7 +6,7 @@
 /*   By: ojerroud <ojerroud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 15:54:16 by vle-gal           #+#    #+#             */
-/*   Updated: 2019/03/04 14:21:06 by ojerroud         ###   ########.fr       */
+/*   Updated: 2019/03/04 16:02:28 by ojerroud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void friend(char *start_bis, char *end, char cont[100001])
 	}
 	else
 	{
-		printf(" ");
+		printf("");
 	}
 }
 
@@ -56,14 +56,14 @@ void educ(char *start_bis, char *end, char cont[100001])
 			start_quad = res;
 			while ((start_quad = strstr(start_quad+1, "\">")))
 			{
-				printf("|||%s", start_quad + 2);
+				printf(",%s", start_quad + 2);
 			}
 		}
 		start_tris = cont;
 	}
 	else
 	{
-		printf("||| ");
+		printf(",");
 	}
 }
 
@@ -81,11 +81,11 @@ void town(char *start_bis, char *end, char cont[100001])
 		start_tris = res;
 		if ((start_tris = strstr(start_tris+1, "\">")))
 		{
-			printf("|||%s", start_tris + 2);
+			printf(",%s", start_tris + 2);
 		}
 		else
 		{
-			printf("||| ");
+			printf(",");
 		}
 	}
 	start_bis = cont;
@@ -98,11 +98,11 @@ void town(char *start_bis, char *end, char cont[100001])
 		start_tris = res;
 		if ((start_tris = strstr(start_tris+1, "\">")))
 		{
-			printf("|||%s", start_tris + 2);
+			printf(",%s", start_tris + 2);
 		}
 		else
 		{
-			printf("||| ");
+			printf(",");
 		}
 	}
 }
@@ -117,11 +117,11 @@ void sexe(char *start_bis, char *end, char cont[100001])
 		end = strstr(start_bis, "</div></td></tr></table>");
 		bzero(res, 100000);
 		memcpy(res, start_bis + 66, end - start_bis - 66);
-		printf("|||%s", res);
+		printf(",%s", res);
 	}
 	else
 	{
-		printf("||| ");
+		printf(",");
 	}
 }
 
@@ -153,6 +153,8 @@ char	*clean_str(char *str)
 			}
 		}
 		tmp[++j] = str[i];
+		if (str[i] == ',')
+			tmp[j] = ';';
 	}
 	return (tmp);
 }
@@ -179,11 +181,11 @@ void citation(char *start_bis, char *end, char cont[100001])
 		bzero(res, 100000);
 		memcpy(res, start_bis + 267, end - start_bis - 267);
 		line_break(res);
-		printf("|||\n %s", res);
+		printf(",\n %s", res);
 	}
 	else
 	{
-		printf("||| ");
+		printf(",");
 	}
 }
 
@@ -201,7 +203,7 @@ int main(int argc, char **argv)
 	start = buff;
 	while ((start = strstr(start+1, "objects")))
 	{
-		printf("\n\nProfil: amis, etab avant, etab apres, ville actuel, ville d'origine, sexe, citation\n");
+		printf("\n\nProfil:\n\namis, ville actuel, ville d'origine, sexe, citation\n");
 		end = strstr(start, "/html");
 		bzero(cont, 100000);
 		memcpy(cont, start, end - start);

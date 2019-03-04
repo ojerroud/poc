@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-name="vigiproject"
+name="containers"
+name2="profil"
 key=$2
 id=$1
 
@@ -8,9 +9,9 @@ then
  	for_m/script_scrap.bash $id 'cookie: datr=bjYGXAgvssLqBJjL-UngKTNv; noscript=1; sb=dDYGXLbhCHI9e0d8HAMnkji-; c_user=100025777429176; xs=38%3Au6gA28VBFDGZxw%3A2%3A1543911373%3A15540%3A16189; fr=1cgKrn8h179dDxVal.AWUOTLT_yqztYpf7Zl07CUCatVA.BcBjZu.cI.AAA.0.0.BcBjfL.AWV8QpTo; pl=n'
 	exit 0
 fi
-if [ "$key" == "rm" ]
+if [ "$key" == "clean" ]
 then
-	rm -rf result.csv sav $name
+	rm -rf result.csv sav $name $name2 nb_time_shell 
 	exit 0
 fi
 if [ "$key" == "parse" ]

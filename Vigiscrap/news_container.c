@@ -6,7 +6,7 @@
 /*   By: ojerroud <ojerroud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 15:54:16 by vle-gal           #+#    #+#             */
-/*   Updated: 2019/03/04 12:20:06 by ojerroud         ###   ########.fr       */
+/*   Updated: 2019/03/04 15:59:55 by ojerroud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,11 @@ char	*clean_str(char	*str)
 				i++;
 		}
 		if (can_write)
+		{
 			temp[++j] = str[i];
+			if (str[i] == ',')
+				temp[j] = ';';
+		}
 	}
 	temp[++j] = str[i];
 	return (temp);
@@ -85,11 +89,11 @@ int		proprio(char *start_bis, char *end)
 		bzero(res, 500001);
 		memcpy(res, start_bis + 11, end - start_bis - 11);
 		remplace_str(res);
-		printf("|||proprio: %s ", res);
+		printf(",%s", res);
 		return (1);
 	}
 	else
-		printf("|||proprio_no ");
+		printf(",");
 	return (0);
 }
 
@@ -104,10 +108,10 @@ void	date(char *start_bis, char *end)
 		bzero(res, 500001);
 		memcpy(res, start_bis + 6, end - start_bis - 6);
 		remplace_str(res);
-		printf("|||date: %s ", res);
+		printf(",%s", res);
 	}
 	else
-		printf("|||date_no ");
+		printf(",");
 }
 
 int		text(char *start_bis, char *end)
@@ -120,11 +124,11 @@ int		text(char *start_bis, char *end)
 		bzero(res, 5000);
 		memcpy(res, start_bis + 9, end - start_bis - 9);
 		remplace_str(res);
-		printf("|||text: %s ", res);
+		printf(",%s", res);
 		return (1);
 	}
 	else
-		printf("|||text_no ");
+		printf(",");
 	return (0);
 }
 
@@ -139,11 +143,11 @@ int		titre(char *start_bis, char *end)
 			bzero(res, 5000);
 			memcpy(res, start_bis + 35, end - start_bis - 35);
 			remplace_str(res);
-			printf("|||title: %s ", res);
+			printf(",%s", res);
 			return (1);
 		}
 	else
-		printf("|||title_no ");
+		printf(",");
 	return (0);
 }
 
@@ -158,11 +162,11 @@ int		auteur(char *start_bis, char *end)
 		bzero(res, 5000);
 		memcpy(res, start_bis + 24, end - start_bis - 24);
 		remplace_str(res);
-		printf("|||%s ", res);
+		printf(",%s", res);
 		return (1);
 	}
 	else
-		printf("||| ");
+		printf(",");
 	return (0);
 }
 
@@ -178,14 +182,14 @@ int		nb_comm(char *start_bis, char *end)
 			bzero(res, 5000);
 			memcpy(res, start_bis + 26, end - start_bis - 26);
 			remplace_str(res);
-			printf("|||nb_comm: %s ", res);
+			printf(",%s", res);
 			return (1);
 		}
 		else
-			printf("|||nb_comm_no ");
+			printf(",");
 	}
 	else
-		printf("|||nb_comm_else ");
+		printf(",");
 	return (0);
 }
 
@@ -216,7 +220,7 @@ int		main(int ac, char **av)
 	{
 		// if (is_clone())
 		// 	continue;
-		printf("\ncontainer %d:", ++i);
+		printf("\ncontainer %d", ++i);
 		end = strstr(start, "avis sur cette publication</a>");
 
 		bzero(cont, 500001);
@@ -241,9 +245,9 @@ int		main(int ac, char **av)
 		nb_comm(start_bis, end);
 
 		if (image == 0)
-			printf("|||1");
+			printf(",1");
 		else
-			printf("||| ");
+			printf(",0");
 		image = 0;
 		// printf("passage %d\n", i);
 		// if (i == 2)
