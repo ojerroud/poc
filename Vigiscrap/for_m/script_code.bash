@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
+name="containers"
+name2="profil"
 id=$1
 path="sav/"
 extension=".html"
-gcc -Wall -Wextra -Werror news_container.c
-echo - > result.csv
+gcc news_container.c -o $name
+echo "Resultats" > result.csv
 #echo "1-----1" >> test1
 #./a.out 100001596874228.0.timeline >> test1
 #echo "2-----2" >> test1
@@ -22,13 +24,11 @@ do
 	echo -e "\n\n$nb_time"-----"$nb_time_total\n" >> result.csv
 	nb_time=$(($nb_time-1))
 	# echo ./a.out $path$id.$nb_time.timeline$extension
-	./a.out $path$id.$nb_time.timeline$extension >> result.csv
+	./$name $path$id.$nb_time.timeline$extension >> result.csv
 	if [ "$nb_time" -eq "0" ]
 	then
 		break
 	fi
 done
-exit 1
-echo ":)"
-# gcc news_profil.c
-# ./a.out $path$id.profile$extension >> result.csv
+gcc news_profil.c -o $name2
+./$name2 $path$id.profile$extension >> result.csv

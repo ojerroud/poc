@@ -33,5 +33,6 @@
 
 
 
-#sh m $id 1 -> pour lancer le scrap
-#sh m $id -> pour parser
+#sh m.bask $id scrap	-> pour lancer le scrap
+#sh m.bash $id parse	-> pour lancer le parser
+#sh m.bash $id rm		-> pour clean

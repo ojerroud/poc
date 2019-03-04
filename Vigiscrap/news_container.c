@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   news_container.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vle-gal <vle-gal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ojerroud <ojerroud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 15:54:16 by vle-gal           #+#    #+#             */
-/*   Updated: 2018/09/06 16:32:13 by vle-gal          ###   ########.fr       */
+/*   Updated: 2019/03/04 12:20:06 by ojerroud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,10 @@ char	*clean_str(char	*str)
 	while (str[++i])
 	{
 		if (str[i] == '<')
+		{
 			can_write = 0;
+			continue;
+		}
 		if (str[i] == '>')
 		{
 			can_write = 1;
@@ -45,7 +48,6 @@ char	*clean_str(char	*str)
 		}
 		if (str[i] == '&' && str[i + 1] == '#' && can_write != 0)
 		{
-			i++;
 			while (!isdigit(str[i]))
 				i++;
 			temp[++j] = atoi(str + i);
@@ -61,15 +63,28 @@ char	*clean_str(char	*str)
 	return (temp);
 }
 
+void	remplace_str(char *str)
+{
+	char	*temp;
+
+	temp = malloc(500001);
+	temp = clean_str(str);
+	bzero(str, 5000);
+	memcpy(str, temp, strlen(temp));
+	free(temp);
+}	
+
 int		proprio(char *start_bis, char *end)
 {
 	char res[500001];
+
 	if ((start_bis = strstr(start_bis+1, "tn__=CH-R\">")))
 	{
 		// printf("\n*****proprio_du_partage|");
 		end = strstr(start_bis, "</a></strong>");
 		bzero(res, 500001);
 		memcpy(res, start_bis + 11, end - start_bis - 11);
+		remplace_str(res);
 		printf("|||proprio: %s ", res);
 		return (1);
 	}
@@ -77,71 +92,34 @@ int		proprio(char *start_bis, char *end)
 		printf("|||proprio_no ");
 	return (0);
 }
+
 void	date(char *start_bis, char *end)
 {
 	char res[500001];
+
 	if ((start_bis = strstr(start_bis+1, "<abbr>")))
 	{
 		// printf("\n|=|date-|");
 		end = strstr(start_bis, "</abbr>");
 		bzero(res, 500001);
 		memcpy(res, start_bis + 6, end - start_bis - 6);
+		remplace_str(res);
 		printf("|||date: %s ", res);
 	}
 	else
 		printf("|||date_no ");
 }
-//
-// void text_lien(char *start_bis, char *end, char cont[500001])
-// {
-// 	char res[500001];
-//
-//
-// }
-
-// int		text(char *start_bis, char *end)
-// {
-// 	char res[500001];
-// 	char	*temp;
-
-// 	if ((start_bis = strstr(start_bis+1, "<span><p>")))
-// 	{
-// 		// if (strstr(start_bis, "<a href"))
-// 		// {
-// 		// 	text_lien(start_bis, end, cont);
-// 		// 	return (1);
-// 		// }
-// 		end = strstr(start_bis, "</p></span>");
-// 		bzero(res, 5000);
-// 		memcpy(res, start_bis + 9, end - start_bis - 9);
-// 		temp = malloc (500001);
-// 		temp = clean_str(res);
-// 		bzero(res, 5000);
-// 		memcpy(res, temp, strlen(temp));
-// 		free(temp);
-// 		printf("|||text: %s ", res);
-// 		return (1);
-// 	}
-// 	else
-// 		printf("|||text_no ");
-// 	return (0);
-// }
 
 int		text(char *start_bis, char *end)
 {
 	char res[500001];
-	char	*temp;
 
 	if ((start_bis = strstr(start_bis+1, "<span><p>")))
 	{
 		end = strstr(start_bis, "</span>");
 		bzero(res, 5000);
 		memcpy(res, start_bis + 9, end - start_bis - 9);
-		temp = malloc (500001);
-		temp = clean_str(res);
-		bzero(res, 5000);
-		memcpy(res, temp, strlen(temp));
-		free(temp);
+		remplace_str(res);
 		printf("|||text: %s ", res);
 		return (1);
 	}
@@ -160,6 +138,7 @@ int		titre(char *start_bis, char *end)
 			end = strstr(start_bis, "</h3><div class=");
 			bzero(res, 5000);
 			memcpy(res, start_bis + 35, end - start_bis - 35);
+			remplace_str(res);
 			printf("|||title: %s ", res);
 			return (1);
 		}
@@ -178,6 +157,7 @@ int		auteur(char *start_bis, char *end)
 		end = strstr(start_bis + 7, "<div class");
 		bzero(res, 5000);
 		memcpy(res, start_bis + 24, end - start_bis - 24);
+		remplace_str(res);
 		printf("|||%s ", res);
 		return (1);
 	}
@@ -197,6 +177,7 @@ int		nb_comm(char *start_bis, char *end)
 		{
 			bzero(res, 5000);
 			memcpy(res, start_bis + 26, end - start_bis - 26);
+			remplace_str(res);
 			printf("|||nb_comm: %s ", res);
 			return (1);
 		}

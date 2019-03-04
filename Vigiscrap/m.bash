@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+name="vigiproject"
 key=$2
 id=$1
 
@@ -10,7 +10,7 @@ then
 fi
 if [ "$key" == "rm" ]
 then
-	rm -rf result.csv sav
+	rm -rf result.csv sav $name
 	exit 0
 fi
 if [ "$key" == "parse" ]
@@ -18,4 +18,4 @@ then
 	for_m/script_code.bash $id
 	exit 0
 fi
-echo "usage: bash m.bash \$id [scrap rm parse]"
+echo "usage: bash m.bash \$id [scrap/rm/parse]"
