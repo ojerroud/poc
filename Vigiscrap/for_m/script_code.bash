@@ -19,7 +19,7 @@ gcc news_container.c -o $name
 nb_time=$(<nb_time_shell)
 nb_time_total=$((nb_time))
 #nb_time=13
-echo -e "Timeline, Container, Proprio, Date, Text, Lien, Titre, Auteur, Nb_comm, Image_profil" > result.csv
+echo -e "Timeline, Container, Proprio, Date, Text, Titre, Auteur, Nb_comm, Image_profil" > result.csv
 while [ 1 ]
 do
 	nb_time=$(($nb_time-1))
