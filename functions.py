@@ -1,22 +1,37 @@
 import csv
 
+def sort_n_lower(list):
+    list.sort()
+    for i in range(0, len(list)):
+        list[i][0] = list[i][0].lower()
+    return (list)
 
-# get the list to define the sentiment
+def get_result_csv(path):
+    container = []
+    profile = []
+    bool = False
 
-# def get_data(path):
-#     list = []
+    fd = open(path, 'r')
+    buff = csv.reader(fd)
+    for row in buff:
+        if row[0] == "Profil":
+            bool = True
+            continue
+        if bool == False:
+            container.append(row)
+        else:
+            profile.append(row)
+    return (container, profile)
 
-#     fd = open(path, 'r')
-#     buff = csv.reader(fd)
-#     for row in buff:
-#         list.append(row)
-#     return (list)
+def get_keywords(path):
+    list = []
 
-
-def get_data(path):
     file = open(path, 'r')
-    file = file.read()
-    return file
+    buff = csv.reader(file)
+    for row in buff:
+        list.append(row)
+    sort_n_lower(list)
+    return list
 
 def get_sentences(doc):
     list = []

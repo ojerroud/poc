@@ -17,4 +17,4 @@ then
 	for_m/script_code.bash $id
 	exit 0
 fi
-echo "usage: bash m.bash \$id [scrap/clean/parse]"
+echo "usage: bash m.bash \$id [scrap/parse/clean]"

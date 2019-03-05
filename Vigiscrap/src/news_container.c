@@ -6,7 +6,7 @@
 /*   By: ojerroud <ojerroud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 15:54:16 by vle-gal           #+#    #+#             */
-/*   Updated: 2019/03/05 13:36:52 by ojerroud         ###   ########.fr       */
+/*   Updated: 2019/03/05 17:37:52 by ojerroud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ char	*clean_str(char	*str)
 	}
 	temp[++j] = str[i];
 	return (temp);
+	// return (str);
 }
 
 void	remplace_str(char *str)
@@ -120,7 +121,8 @@ int		text(char *start_bis, char *end)
 
 	if ((start_bis = strstr(start_bis+1, "<span><p>")))
 	{
-		end = strstr(start_bis, "</span>");
+		end = strstr(start_bis, "</p>");
+		// end = strstr(start_bis, "</span>");
 		bzero(res, 5000);
 		memcpy(res, start_bis + 9, end - start_bis - 9);
 		remplace_str(res);
