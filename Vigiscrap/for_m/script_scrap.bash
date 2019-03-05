@@ -39,7 +39,10 @@ extension=".html"
 cookies=$2 
 echo "GETUSER#$id"
 
-mkdir $path
+if [ ! -d "$path" ]; then
+	mkdir $path
+fi
+
 profile_src=`getUserById "$id" "$cookies"`
 echo $profile_src > "$path$id.profile$extension"
 
@@ -56,7 +59,6 @@ do
 	echo "$timeline_src" > "$path$id.$I.timeline$extension"
 	timeline_url=$(getDisplayMoreUrlByTimelineSrc "$timeline_src")
 	I=$(($I+1))
-	echo $I > nb_time_shell
 	if [[ -z "$timeline_url" ]]
 	then
 		break
@@ -70,16 +72,16 @@ do
 	do
 		timeline_url=`echo "$timeline_url" | sed 's/&amp;/\&/g'`
 		timeline_src=`getPage "$timeline_url" "$cookies"`
-		echo "$timeline_src" > "$path$id.timeline$extension"
+		# echo "$timeline_src" > "$path$id.timeline$extension"
 		echo "$timeline_src" > "$path$id.$I.timeline$extension"
 		timeline_url=$(getDisplayMoreUrlByTimelineSrc "$timeline_src")
 		I=$(($I+1))
-	echo $I > nb_time_shell
 		if [[ -z "$timeline_url" ]]
 		then
 			break
 		fi
 	done
 done
+echo $I > nb_time_shell
 
 # echo "===END===" >> $id

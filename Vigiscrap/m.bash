@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-name="containers"
-name2="profil"
 key=$2
 id=$1
 
@@ -11,7 +9,7 @@ then
 fi
 if [ "$key" == "clean" ]
 then
-	rm -rf result.csv sav $name $name2 nb_time_shell 
+	rm -rf res sav exe nb_time_shell 
 	exit 0
 fi
 if [ "$key" == "parse" ]
@@ -19,4 +17,4 @@ then
 	for_m/script_code.bash $id
 	exit 0
 fi
-echo "usage: bash m.bash \$id [scrap/rm/parse]"
+echo "usage: bash m.bash \$id [scrap/clean/parse]"

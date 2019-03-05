@@ -1,34 +1,35 @@
 #!/usr/bin/env bash
-name="containers"
+path_src="src"
+path_exe="exe"
+path_res="res"
+name1="containers"
 name2="profil"
 id=$1
 path="sav/"
 extension=".html"
-gcc news_container.c -o $name
-# echo "Resultats" > result.csv
-#echo "1-----1" >> test1
-#./a.out 100001596874228.0.timeline >> test1
-#echo "2-----2" >> test1
-#./a.out 100001596874228.1.timeline >> test1
-#echo "3-----3" >> test1
-#./a.out 100001596874228.2.timeline >> test1
-#echo "4-----4" >> test1
-#./a.out 100001596874228.3.timeline >> test1
-#echo "5-----5" >> test1
-#./a.out 100001596874228.4.timeline >> test1
 nb_time=$(<nb_time_shell)
 nb_time_total=$((nb_time))
-#nb_time=13
-echo -e "Timeline, Container, Proprio, Date, Text, Titre, Auteur, Nb_comm, Image_profil" > result.csv
+
+if [ ! -d "$path_src" ]; then
+	mkdir $path_src
+fi
+if [ ! -d "$path_res" ]; then
+	mkdir $path_res
+fi
+if [ ! -d "$path_exe" ]; then
+	mkdir $path_exe
+fi
+
+gcc $path_src/news_container.c -o $path_exe/$name1
+gcc $path_src/news_profil.c -o $path_exe/$name2
+echo -e "Timeline, Container, Proprio, Date, Text, Titre, Auteur, Nb_comm, Image_profil" > $path_res/result.csv
 while [ 1 ]
 do
 	nb_time=$(($nb_time-1))
-	# echo ./a.out $path$id.$nb_time.timeline$extension
-	./$name $path$id.$nb_time.timeline$extension $((nb_time+1)) >> result.csv
+	./$path_exe/$name1 $path$id.$nb_time.timeline$extension $((nb_time+1)) >> $path_res/result.csv
 	if [ "$nb_time" -eq "0" ]
 	then
 		break
 	fi
 done
-gcc news_profil.c -o $name2
-./$name2 $path$id.profile$extension >> result.csv
+./$path_exe/$name2 $path$id.profile$extension >> $path_res/result.csv
