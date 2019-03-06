@@ -36,3 +36,4 @@
 #sh m.bask $id scrap	-> pour lancer le scrap
 #sh m.bash $id parse	-> pour lancer le parser
 #sh m.bash $id clean	-> pour clean
+#text:4 || titre:5
