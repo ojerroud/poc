@@ -13,12 +13,14 @@ def get_bad_sentence(result_contenaire, keywords, analyse):
 				if (result_contenaire[i][j].find(keywords[k][0]) != -1):
 					if (len(analyse) == 0):
 						analyse.append(result_contenaire[i])
+						i += 1
 					else:
 						for l in range(0, len(analyse)):
 							if (analyse[l][3] == result_contenaire[i][3]):
 								bool = True
 						if (bool == False):
 							analyse.append(result_contenaire[i])
+							i += 1
 	return (analyse)
 
 def put_spacy_on_list(list):
