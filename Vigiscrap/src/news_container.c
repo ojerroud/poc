@@ -6,7 +6,7 @@
 /*   By: ojerroud <ojerroud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 15:54:16 by vle-gal           #+#    #+#             */
-/*   Updated: 2019/03/05 17:37:52 by ojerroud         ###   ########.fr       */
+/*   Updated: 2019/03/08 11:11:43 by ojerroud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,6 +122,8 @@ int		text(char *start_bis, char *end)
 	if ((start_bis = strstr(start_bis+1, "<span><p>")))
 	{
 		end = strstr(start_bis, "</p>");
+		if (end[4] == '<' && end[5] == 'p' && end[6] == '>')
+			end = strstr(end + 2, "</p>");
 		// end = strstr(start_bis, "</span>");
 		bzero(res, 5000);
 		memcpy(res, start_bis + 9, end - start_bis - 9);

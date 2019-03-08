@@ -3,9 +3,11 @@ import csv
 
 def print_analyse(analyse):
 	for i in range(0, len(analyse)):
-		print ('analyse : ',analyse[i])
+		print (analyse[i])
 
-def get_bad_sentence(result_contenaire, keywords, analyse):
+def get_bad_sentence(result_contenaire, keywords):
+	analyse = []
+
 	for i in range(1, len(result_contenaire)):
 		for j in range(2, len(result_contenaire[i])):
 			bool = False

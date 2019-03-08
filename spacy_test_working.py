@@ -1,13 +1,18 @@
 import functions
 # import spacy
 
-analyse = []
 
 result_contenaire, result_profil = functions.get_result_csv('Vigiscrap/res/result.csv')
+# result_contenaire, result_profil = functions.get_result_csv('test.csv')
+print (result_contenaire)
+print (result_profil)
 keywords = functions.get_keywords('keywords.csv')
-analyse = functions.get_bad_sentence(result_contenaire, keywords, analyse)
+print(len(result_contenaire), len(result_contenaire[0]), len(keywords))
+# analyse = functions.get_bad_sentence(result_contenaire, keywords)
 
 functions.print_analyse(analyse)
+
+
 
 # nlp = spacy.load('fr')
 
