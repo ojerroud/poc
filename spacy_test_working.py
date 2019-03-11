@@ -1,16 +1,19 @@
 import functions
-# import spacy
 
+analyse = []
 
 result_contenaire, result_profil = functions.get_result_csv('Vigiscrap/res/result.csv')
-# result_contenaire, result_profil = functions.get_result_csv('test.csv')
-print (result_contenaire)
-print (result_profil)
-keywords = functions.get_keywords('keywords.csv')
-print(len(result_contenaire), len(result_contenaire[0]), len(keywords))
-# analyse = functions.get_bad_sentence(result_contenaire, keywords)
+keywords = functions.get_keywords('src/keywords.csv')
+negation = functions.get_keywords('src/negation.csv')
 
-functions.print_analyse(analyse)
+print (keywords)
+print (negation)
+
+analyse = functions.get_bad_sentence(result_contenaire, keywords)
+analyse_pos, analyse_neg = functions.check_if_negatif(analyse, keywords, negation)
+
+functions.print_analyse(analyse_pos, "pos : ")
+functions.print_analyse(analyse_neg, "neg : ")
 
 
 

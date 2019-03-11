@@ -6,7 +6,7 @@
 /*   By: ojerroud <ojerroud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 15:54:16 by vle-gal           #+#    #+#             */
-/*   Updated: 2019/03/04 17:15:31 by ojerroud         ###   ########.fr       */
+/*   Updated: 2019/03/11 14:10:13 by ojerroud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,16 +55,12 @@ void educ(char *start_bis, char *end, char cont[100001])
 			memcpy(res, start_tris + 0, end - start_tris - 0);
 			start_quad = res;
 			while ((start_quad = strstr(start_quad+1, "\">")))
-			{
 				printf(",%s", start_quad + 2);
-			}
 		}
 		start_tris = cont;
 	}
 	else
-	{
 		printf(",");
-	}
 }
 
 void town(char *start_bis, char *end, char cont[100001])
@@ -72,7 +68,7 @@ void town(char *start_bis, char *end, char cont[100001])
 	char res[100001];
 	char *start_tris;
 
-	while ((start_bis = strstr(start_bis+1, "Ville actuelle</span></div></td><td valign=")))
+	if ((start_bis = strstr(start_bis+1, "Ville actuelle</span></div></td><td valign=")))
 	{
 		// printf("\n-ville actuelle-|");
 		end = strstr(start_bis, "</a></div></td></tr>");
@@ -80,16 +76,14 @@ void town(char *start_bis, char *end, char cont[100001])
 		memcpy(res, start_bis + 86, end - start_bis - 86);
 		start_tris = res;
 		if ((start_tris = strstr(start_tris+1, "\">")))
-		{
 			printf(",%s", start_tris + 2);
-		}
 		else
-		{
 			printf(",");
-		}
 	}
+	else
+		printf(",");
 	start_bis = cont;
-	while ((start_bis = strstr(start_bis+1, "Ville d’origine</span></div></td><td valign=")))
+	if ((start_bis = strstr(start_bis+1, "Ville d’origine</span></div></td><td valign=")))
 	{
 		// printf("\n-ville d'origine-|");
 		end = strstr(start_bis, "</a></div></td></tr>");
@@ -97,14 +91,12 @@ void town(char *start_bis, char *end, char cont[100001])
 		memcpy(res, start_bis + 89, end - start_bis - 89);
 		start_tris = res;
 		if ((start_tris = strstr(start_tris+1, "\">")))
-		{
 			printf(",%s", start_tris + 2);
-		}
 		else
-		{
 			printf(",");
-		}
 	}
+	else
+		printf(",");
 }
 
 void sexe(char *start_bis, char *end, char cont[100001])
@@ -185,9 +177,7 @@ void citation(char *start_bis, char *end, char cont[100001])
 		printf(",%s", res);
 	}
 	else
-	{
 		printf(",");
-	}
 }
 
 int main(int argc, char **argv)
