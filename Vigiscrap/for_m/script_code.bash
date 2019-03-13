@@ -19,9 +19,9 @@ fi
 if [ ! -d "$path_exe" ]; then
 	mkdir $path_exe
 fi
-
-gcc $path_src/news_container.c -o $path_exe/$name1
-gcc $path_src/news_profil.c -o $path_exe/$name2
+echo "parsing results in progress..."
+`gcc $path_src/news_container.c -o $path_exe/$name1`
+`gcc $path_src/news_profil.c -o $path_exe/$name2`
 echo -e "Timeline, Container, Proprio, Date, Text, Titre, Auteur, Nb_comm, Image_profil" > $path_res/result.csv
 while [ 1 ]
 do
@@ -33,3 +33,4 @@ do
 	fi
 done
 ./$path_exe/$name2 $path$id.profile$extension >> $path_res/result.csv
+echo "done!"

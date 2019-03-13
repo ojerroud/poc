@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 rm -rf sav
-path="sav/"
+path_sav="sav/"
 
 getUserById()
 {
@@ -39,24 +39,23 @@ extension=".html"
 cookies=$2 
 echo "GETUSER#$id"
 
-if [ ! -d "$path" ]; then
-	mkdir $path
+if [ ! -d "$path_sav" ]; then
+	mkdir $path_sav
 fi
 
 profile_src=`getUserById "$id" "$cookies"`
-echo $profile_src > "$path$id.profile$extension"
+echo $profile_src > "$path_sav$id.profile$extension"
 
 timeline_url=`getTimelineUrlByProfileSrc "$profile_src"`
 
 # echo "===START===" > $id
 I=0
-
+echo "scrap profil in progress..."
 while [ 1 ]
 do
 	timeline_url=`echo "$timeline_url" | sed 's/&amp;/\&/g'`
 	timeline_src=`getPage "$timeline_url" "$cookies"`
-	# echo "$timeline_src" > "$path$id.timeline$extension"
-	echo "$timeline_src" > "$path$id.$I.timeline$extension"
+	echo "$timeline_src" > "$path_sav$id.$I.timeline$extension"
 	timeline_url=$(getDisplayMoreUrlByTimelineSrc "$timeline_src")
 	I=$(($I+1))
 	if [[ -z "$timeline_url" ]]
@@ -72,8 +71,7 @@ do
 	do
 		timeline_url=`echo "$timeline_url" | sed 's/&amp;/\&/g'`
 		timeline_src=`getPage "$timeline_url" "$cookies"`
-		# echo "$timeline_src" > "$path$id.timeline$extension"
-		echo "$timeline_src" > "$path$id.$I.timeline$extension"
+		echo "$timeline_src" > "$path_sav$id.$I.timeline$extension"
 		timeline_url=$(getDisplayMoreUrlByTimelineSrc "$timeline_src")
 		I=$(($I+1))
 		if [[ -z "$timeline_url" ]]
@@ -83,5 +81,6 @@ do
 	done
 done
 echo $I > nb_time_shell
+echo "done!"
 
 # echo "===END===" >> $id

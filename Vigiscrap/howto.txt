@@ -33,7 +33,7 @@
 
 
 
-#sh m.bask $lien_facebook scrap	-> pour lancer le scrap
-#sh m.bash $lien_facebook parse	-> pour lancer le parser
-#sh m.bash $lien_facebook clean	-> pour clean
-#text:4 || titre:5
+#bash m.bash $lien_facebook scrap	-> pour lancer le scrap & le parse a la suite
+#bash m.bash $lien_facebook scrap	-> pour lancer le scrap
+#bash m.bash $lien_facebook parse	-> pour lancer le parser
+#bash m.bash $lien_facebook clean	-> pour clean

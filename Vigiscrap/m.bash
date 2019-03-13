@@ -15,15 +15,13 @@ id=`getId "$facebook" "$cookie" | grep -Eo '.{0,0}entity_id".{0,20}' | sed -n -e
 
 if [ "$key" == "all" ]
 then
- 	echo $id
-	for_m/script_scrap.bash "$id" "$cookie"
-	for_m/script_code.bash $id
+	bash for_m/script_scrap.bash "$id" "$cookie"
+	bash for_m/script_code.bash $id
 	exit 0
 fi
 if [ "$key" == "scrap" ]
 then
- 	echo $id
-	for_m/script_scrap.bash "$id" "$cookie"
+	bash for_m/script_scrap.bash "$id" "$cookie"
 	exit 0
 fi
 if [ "$key" == "clean" ]
@@ -33,7 +31,7 @@ then
 fi
 if [ "$key" == "parse" ]
 then
-	for_m/script_code.bash $id
+	bash for_m/script_code.bash $id
 	exit 0
 fi
 echo "usage: bash m.bash \$[lien de la page facebook] [all/scrap/parse/clean]"
